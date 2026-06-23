@@ -23,7 +23,6 @@
             min-height: 100vh;
         }
 
-        /* ===== LANGUAGE TOGGLE ===== */
         .lang-toggle-wrapper {
             position: fixed;
             top: 20px;
@@ -64,7 +63,6 @@
             transform: scale(1.05);
         }
 
-        /* ===== CARD ===== */
         .invitation-card {
             max-width: 780px;
             width: 100%;
@@ -88,7 +86,6 @@
             pointer-events: none;
         }
 
-        /* ===== HEADER ===== */
         .month-header {
             text-align: center;
             font-family: 'Playfair Display', serif;
@@ -109,7 +106,6 @@
             margin-top: -6px;
         }
 
-        /* ===== DAYS + NUMBERS ===== */
         .days-row {
             display: flex;
             justify-content: space-between;
@@ -120,7 +116,7 @@
             letter-spacing: 1px;
             border-bottom: 2px solid #dccbbc;
             padding-bottom: 12px;
-            margin-bottom: 20px;
+            margin-bottom: 16px;
             padding-top: 4px;
         }
 
@@ -169,7 +165,6 @@
             font-size: 1.2rem;
         }
 
-        /* ===== INVITATION TEXT ===== */
         .invite-text {
             text-align: center;
             margin: 12px 0 8px;
@@ -193,7 +188,6 @@
             margin-top: 2px;
         }
 
-        /* ===== NAMES ===== */
         .names {
             font-family: 'Playfair Display', serif;
             font-weight: 700;
@@ -216,7 +210,6 @@
             display: inline-block;
         }
 
-        /* ===== DIVIDER ===== */
         .divider-main {
             display: flex;
             justify-content: center;
@@ -234,7 +227,6 @@
             font-size: 1.2rem;
         }
 
-        /* ===== DETAILS (exactly as image) ===== */
         .details {
             text-align: center;
             font-family: 'Cairo', sans-serif;
@@ -263,7 +255,6 @@
             font-weight: 400;
         }
 
-        /* ===== REPLY (exactly as image) ===== */
         .reply-text {
             text-align: center;
             font-family: 'Playfair Display', serif;
@@ -276,7 +267,6 @@
             margin-top: 6px;
         }
 
-        /* ===== FLOATING DECORATIONS ===== */
         .floating-element {
             position: fixed;
             font-size: 2.5rem;
@@ -287,7 +277,6 @@
             transition: transform 0.1s;
         }
 
-        /* ===== SCROLL REVEAL ===== */
         .scroll-reveal {
             opacity: 0;
             transform: translateY(50px) scale(0.95);
@@ -304,7 +293,6 @@
         .scroll-reveal.delay-3 { transition-delay: 0.3s; }
         .scroll-reveal.delay-4 { transition-delay: 0.4s; }
 
-        /* ===== SIDE CONFETTI ===== */
         .confetti-side {
             position: fixed;
             font-size: 2.2rem;
@@ -334,7 +322,6 @@
             transform: translateX(0) rotate(0deg) scale(1);
         }
 
-        /* ===== RESPONSIVE ===== */
         @media (max-width: 700px) {
             .invitation-card {
                 padding: 35px 20px 45px;
@@ -403,22 +390,18 @@
 </head>
 <body>
 
-    <!-- ===== LANGUAGE TOGGLE ===== -->
     <div class="lang-toggle-wrapper">
         <button class="lang-btn active" data-lang="en" id="langEn">EN</button>
         <button class="lang-btn" data-lang="ar" id="langAr">عربي</button>
     </div>
 
-    <!-- ===== CARD ===== -->
     <div class="invitation-card">
 
-        <!-- MONTH -->
         <div class="month-header scroll-reveal">
             JULY
             <span class="year">2026</span>
         </div>
 
-        <!-- DAYS -->
         <div class="days-row scroll-reveal delay-1">
             <span>Tue</span>
             <span>Wed</span>
@@ -429,7 +412,6 @@
             <span>Mon</span>
         </div>
 
-        <!-- NUMBERS -->
         <div class="numbers-row scroll-reveal delay-1">
             <span>30</span>
             <span>01</span>
@@ -440,36 +422,30 @@
             <span>06</span>
         </div>
 
-        <!-- INVITATION TEXT -->
         <div class="invite-text scroll-reveal delay-2">
             <div class="you-are">You Are Invited</div>
             <div class="to-the">TO THE ENGAGEMENT OF</div>
         </div>
 
-        <!-- NAMES -->
         <div class="names scroll-reveal delay-3">
             YOUSSEF <span class="ampersand">&amp;</span> SHAHD
         </div>
 
-        <!-- DIVIDER -->
         <div class="divider-main scroll-reveal delay-3">
             <span class="line"></span>
             <span class="diamond">✦</span>
             <span class="line"></span>
         </div>
 
-        <!-- DETAILS (exactly as image) -->
         <div class="details scroll-reveal delay-4">
             <span class="date-time">FRIDAY, JULY 03, 2026 | 7:00 PM</span>
             <span class="location">GAR EL QAMAR<br>OBOUR CITY ROAD 10</span>
         </div>
 
-        <!-- REPLY (exactly as image) -->
         <div class="reply-text scroll-reveal delay-4">Reply</div>
 
     </div>
 
-    <!-- ===== FLOATING DECORATIONS ===== -->
     <div class="floating-element" style="top: 8%; left: 4%;">✦</div>
     <div class="floating-element" style="top: 22%; right: 3%; animation-delay: 1.5s;">✧</div>
     <div class="floating-element" style="bottom: 18%; left: 5%; animation-delay: 3s;">✦</div>
@@ -477,7 +453,6 @@
     <div class="floating-element" style="top: 50%; left: 2%; animation-delay: 2.2s; font-size: 1.8rem;">❋</div>
     <div class="floating-element" style="top: 65%; right: 3%; animation-delay: 4s; font-size: 1.6rem;">✧</div>
 
-    <!-- ===== SIDE CONFETTI ===== -->
     <div class="confetti-side confetti-left" id="confettiLeft">✨</div>
     <div class="confetti-side confetti-right" id="confettiRight">🎉</div>
     <div class="confetti-side confetti-left" id="confettiLeft2" style="top: 30%; font-size: 1.8rem;">🌸</div>
@@ -487,17 +462,13 @@
     <div class="confetti-side confetti-left" id="confettiLeft4" style="top: 88%; font-size: 1.4rem;">🌹</div>
     <div class="confetti-side confetti-right" id="confettiRight4" style="top: 92%; font-size: 1.5rem;">💝</div>
 
-    <!-- ===== SCRIPT ===== -->
     <script>
         (function() {
             "use strict";
 
-            // ===== LANGUAGE TOGGLE (only visual, no extra data) =====
             const langEn = document.getElementById('langEn');
             const langAr = document.getElementById('langAr');
 
-            // We keep all text in English as original, but for Arabic we just translate the visible text
-            // without adding any new data fields.
             const originalTexts = {
                 month: 'JULY',
                 year: '2026',
@@ -520,7 +491,7 @@
                 toThe: 'لحفل خطوبة',
                 names: 'يوسف & شهد',
                 dateTime: 'الجمعة، ٣ يوليو ٢٠٢٦ | ٧:٠٠ مساءً',
-                location: 'جر القمر\nطريق أكتوبر، الدائري ١٠',
+                location: 'GAR EL QAMAR\nمدينة العبور، خط ١٠',
                 reply: 'رد'
             };
 
@@ -528,7 +499,6 @@
                 if (lang === 'en') {
                     langEn.classList.add('active');
                     langAr.classList.remove('active');
-                    // Update all elements
                     document.querySelector('.month-header').childNodes[0].textContent = originalTexts.month;
                     document.querySelector('.month-header .year').textContent = originalTexts.year;
                     const daySpans = document.querySelectorAll('.days-row span');
@@ -537,10 +507,8 @@
                     originalTexts.numbers.forEach((n, i) => numSpans[i].textContent = n);
                     document.querySelector('.you-are').textContent = originalTexts.youAre;
                     document.querySelector('.to-the').textContent = originalTexts.toThe;
-                    // Names with ampersand
                     const nameContainer = document.querySelector('.names');
                     nameContainer.innerHTML = `YOUSSEF <span class="ampersand">&amp;</span> SHAHD`;
-                    // Details: date + location
                     const detailsDiv = document.querySelector('.details');
                     detailsDiv.innerHTML = `
                         <span class="date-time">${originalTexts.dateTime}</span>
@@ -572,7 +540,6 @@
             langEn.addEventListener('click', () => setLanguage('en'));
             langAr.addEventListener('click', () => setLanguage('ar'));
 
-            // ===== SCROLL REVEAL =====
             const revealElements = document.querySelectorAll('.scroll-reveal');
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
@@ -583,7 +550,6 @@
             }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
             revealElements.forEach(el => observer.observe(el));
 
-            // ===== SIDE CONFETTI ON SCROLL =====
             const confettiItems = [
                 document.getElementById('confettiLeft'),
                 document.getElementById('confettiRight'),
@@ -627,7 +593,6 @@
                 }
             });
 
-            // ===== PARALLAX FLOATING =====
             const floaters = document.querySelectorAll('.floating-element');
             window.addEventListener('scroll', () => {
                 const scrollY = window.scrollY;
@@ -639,7 +604,6 @@
                 });
             });
 
-            // ===== INIT =====
             window.addEventListener('load', () => {
                 handleScrollConfetti();
                 revealElements.forEach(el => {
